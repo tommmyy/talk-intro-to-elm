@@ -1,0 +1,8 @@
+{
+  "name": "talk-intro-to-elm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Tomas Konrady <tomaskonrady@gmail.com>",
+  "license": "MIT",
+  "private": true
+}
