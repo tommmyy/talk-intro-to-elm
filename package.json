@@ -4,5 +4,26 @@
   "main": "index.js",
   "author": "Tomas Konrady <tomaskonrady@gmail.com>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "mdx-deck": "^1.7.15"
+  },
+  "scripts": {
+    "start": "mdx-deck src/deck.mdx",
+    "build": "mdx-deck build src/deck.mdx"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "jsxBracketSameLine": true
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.9.0",
+    "eslint-config-react-union": "^0.9.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-import": "^2.14.0",
+    "prettier": "^1.15.2"
+  }
 }
