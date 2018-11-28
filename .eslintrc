@@ -1,5 +1,5 @@
 {
   "extends": [
-    "eslint-config-react-union/base"
+    "eslint-config-react-union"
   ]
 }
