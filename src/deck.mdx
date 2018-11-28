@@ -1,13 +1,56 @@
+import { CodeSurfer } from 'mdx-deck-code-surfer';
+import { Appear, Image } from 'mdx-deck';
+import { Listed, Fronted, BackgroundImaged } from './layouts';
+import { codeSurferTitle, Ul, Li, MetaList, ImageText } from './components';
 export { theme } from './themes/lundegaard';
 
-# Hello this is my fisrt slide
+# Presentation title
+
+## Subtitle
+
+- Tomáš Konrády
+- <a href="https://twitter.com/konnnyy">@konnnyy</a>
+- Name of event
+
+<a href="https://lundegaard.eu">Lundegaard a. s.</a>
+
+export default Fronted;
 
 ---
 
-# This is our second slide
+<Image src="images/it.gif" />
+
+## Title
+
+This is example of slide with background **image** and text.
+
+export default BackgroundImaged;
 
 ---
 
-```jsx
-<Button />
 ```
+brew install elm
+brew install elm-format
+```
+
+---
+
+<CodeSurfer
+	title={codeSurferTitle('Dynamic code')}
+	code={require('raw-loader!./snippets/1.snippet')}
+	steps={[
+		{},
+		{ tokens: { 1: [1, 4, 6] } }
+	]}
+/>
+
+---
+
+## List
+
+- One
+- Two
+- Three
+
+export default Listed;
+
