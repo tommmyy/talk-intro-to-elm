@@ -26,7 +26,7 @@ export const theme = {
 		fontSize: '1.8rem',
 		textTransform: 'uppercase',
 		position: 'relative',
-		opacity: '0.7',
+		opacity: '0.8',
 
 		'&:after': {
 			position: 'absolute',
@@ -37,6 +37,12 @@ export const theme = {
 			width: '50px',
 			background: '#009fe3',
 			content: '""',
+		},
+	},
+	link: {
+		textDecoration: 'none',
+		'&:hover': {
+			textDecoration: 'underline',
 		},
 	},
 	ul: {
