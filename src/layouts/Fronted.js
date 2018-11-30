@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { color } from 'styled-system';
+import { Head } from 'mdx-deck';
 import { Subtitle, MetaList, Text } from '../components';
 
 const FrontedBase = styled.div(
@@ -22,9 +23,13 @@ const FrontedBase = styled.div(
 
 const Fronted = ({ children, ...rest }) => {
 	const [title, subtitle, meta, footer] = React.Children.toArray(children.props.children);
+	const titleText = title.props.children;
 
 	return (
 		<FrontedBase {...rest}>
+			<Head>
+				<title>{titleText}</title>
+			</Head>
 			{title}
 			<Subtitle>{subtitle.props.children}</Subtitle>
 			<MetaList>{meta.props.children}</MetaList>
