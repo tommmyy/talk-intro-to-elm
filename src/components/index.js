@@ -8,14 +8,18 @@ import chroma from 'chroma-js';
 
 const { components, Image } = deck;
 
-const H1 = components.h1;
-const H2 = components.h2;
+export const H1 = components.h1;
+export const H2 = components.h2;
+
 export const Subtitle = styled(H2)`
 	opacity: 1;
 	font-size: 1em;
 	padding-bottom: 16px;
 	margin-bottom: 32px;
-
+	& em {
+		text-transform: lowercase;
+		font-style: normal;
+	}
 	&:after {
 		position: absolute;
 		bottom: -8px;

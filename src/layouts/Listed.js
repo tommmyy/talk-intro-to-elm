@@ -23,7 +23,7 @@ const ListedBase = styled.div(
 );
 
 const Listed = ({ children, ...rest }) => {
-	const [title, list] = React.Children.toArray(children.props.children);
+	const [title, list, ...restChildren] = React.Children.toArray(children.props.children);
 
 	return (
 		<ListedBase {...rest}>
@@ -35,6 +35,7 @@ const Listed = ({ children, ...rest }) => {
 					)}
 				</Appear>
 			</Ul>
+			{restChildren}
 		</ListedBase>
 	);
 };
