@@ -16,7 +16,7 @@
   "scripts": {
     "start": "mdx-deck src/deck.mdx --port=8888",
     "build": "mdx-deck build src/deck.mdx",
-    "pdf": "mdx-deck pdf deck.mdx"
+    "pdf": "mdx-deck pdf src/deck.mdx"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
